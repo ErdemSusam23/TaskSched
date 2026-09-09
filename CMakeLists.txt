@@ -7,11 +7,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_library(tasksched
+    src/command_line_parser.cpp
+    src/composite_logger.cpp
     src/console_logger.cpp
     src/edf_scheduler.cpp
     src/rms_scheduler.cpp
     src/scheduler_factory.cpp
     src/simulator.cpp
+    src/statistics_reporter.cpp
+    src/task_csv_reader.cpp
 )
 
 target_include_directories(tasksched PUBLIC include)

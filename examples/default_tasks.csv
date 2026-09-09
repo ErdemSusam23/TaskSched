@@ -1,0 +1,5 @@
+id,period,execution,deadline
+# The alarm has a constrained deadline to demonstrate EDF's dynamic priority.
+control,5,2,5
+alarm,8,1,3
+telemetry,10,4,10
